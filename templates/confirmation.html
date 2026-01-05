@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>బుకింగ్ పూర్తయ్యింది</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+<div class="confirm-box">
+<h2>🙏 బుకింగ్ పూర్తయ్యింది</h2>
+<p>మీ ప్రయాణ వివరాలు విజయవంతంగా నమోదు చేయబడ్డాయి</p>
+
+{% if booking %}
+    <p><strong>👤 పేరు:</strong> {{ booking.name }}</p>
+    <p><strong>📞 ఫోన్:</strong> {{ booking.phone }}</p>
+    <p><strong>⏰ చేరుకునే సమయం:</strong> {{ booking.arrival_time }}</p>
+    <p><strong>👥 సభ్యులు:</strong> {{ booking.members }}</p>
+{% endif %}
+
+<br>
+<a href="/">
+    <button>హోమ్‌కు వెళ్ళండి</button>
+</a>
+</div>
+</body>
+</html>

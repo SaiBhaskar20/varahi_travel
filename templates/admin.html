@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<h2>📋 బుకింగ్స్ వివరాలు</h2>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>పేరు</th>
+        <th>ఫోన్</th>
+        <th>సమయం</th>
+        <th>మంది</th>
+        <th>ట్రిప్స్</th>
+        <th>ధర</th>
+    </tr>
+
+    {% for b in bookings %}
+    <tr>
+        <td>{{ b[0] }}</td>
+        <td>{{ b[1] }}</td>
+        <td>{{ b[2] }}</td>
+        <td>{{ b[3] }}</td>
+        <td>{{ b[4] }}</td>
+        <td>{{ b[5] }}</td>
+        <td>₹{{ b[6] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>బుకింగ్</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<h2>📝 ప్రయాణం బుక్ చేయండి</h2>
+
+<form method="POST">
+    <label>మీ పేరు</label>
+    <input name="name" required><br>
+
+    <label>ఫోన్ నంబర్</label>
+    <input name="phone" required><br>
+
+    <label>పోలవరం చేరుకునే సమయం</label>
+    <input type="time" name="arrival_time" required><br>
+
+    <label>ఎంత మంది వస్తున్నారు</label>
+    <input type="number" name="members" min="1" required><br>
+
+    <button type="submit">బుక్ చేయండి</button>
+</form>
+
+<p>ℹ️ ఒక ట్రిప్‌కు ఇద్దరు మాత్రమే | ధర ₹25 ఒకరికి</p>
+
+</body>
+</html>
